@@ -1,0 +1,9 @@
+[Unit]
+Description = google-domains-dynamic-dns-updater
+
+[Service]
+Type = simple
+ExecStart = /usr/local/etc/google-domains-dynamic-dns-updater/update.sh
+
+[Install]
+WantedBy = multi-user.target
