@@ -1,0 +1,9 @@
+[Unit]
+Description=timer for google-domains-dynamic-dns-updater.service
+
+[Timer]
+Persistent=true
+OnUnitActiveSec=30m
+
+[Install]
+WantedBy=timers.target
